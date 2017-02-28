@@ -49,11 +49,11 @@
 
 <div id="simplify-ajax-loader">
     <span>Your payment is being processed...</span>
-    <img src="{$module_dir|escape}views/img/ajax-loader.gif" alt="Loader Icon"/>
+    <img src="{$module_dir|escape:'htmlall':'UTF-8'}views/img/ajax-loader.gif" alt="Loader Icon"/>
 </div>
 
 <div class="simplify-payment-errors">{if isset($smarty.get.simplify_error)}{$smarty.get.simplify_error|escape:'htmlall':'UTF-8'}{/if}</div>
-<form action="{$module_dir|escape}payment.php" method="POST" id="simplify-payment-form">
+<form action="{$module_dir|escape:'htmlall':'UTF-8'}payment.php" method="POST" id="simplify-payment-form">
 {if isset($show_saved_card_details)}
     <div id="old-card-container" class='card-type-container selected clearfix'>
         <div class="first card-detail left">
@@ -77,7 +77,7 @@
 
                 <div id="cc-deletion-container" class="right center">
                     <div>
-                        <img id='trash-icon' src="{$module_dir|escape}views/img/trash.png" alt="trash icon"
+                        <img id='trash-icon' src="{$module_dir|escape:'htmlall':'UTF-8'}views/img/trash.png" alt="trash icon"
                              title="Delete Credit Card"/>
                     </div>
                     <div id="cc-confirm-deletion">
@@ -94,7 +94,7 @@
     </div>
     <div id="cc-deletion-msg">Your credit card has been deleted: <span id="cc-undo-deletion-lnk"
                                                                        class='underline'>Undo <img
-                    alt="Secure Icon" class="secure-icon" src="{$module_dir|escape}views/img/undo.png"/></span></div>
+                    alt="Secure Icon" class="secure-icon" src="{$module_dir|escape:'htmlall':'UTF-8'}views/img/undo.png"/></span></div>
 {/if}
 <div id="new-card-container" class='card-type-container clearfix {if !isset($show_saved_card_details)} no-saved {/if}'>
     {if isset($show_saved_card_details)}
@@ -123,11 +123,11 @@
                         data-name="{$hosted_payment_name|escape:'htmlall':'UTF-8'}"
                         data-description="{$hosted_payment_description|escape:'htmlall':'UTF-8'}"
                         data-reference="{$hosted_payment_reference|escape:'htmlall':'UTF-8'}"
-                        data-amount="{$hosted_payment_amount}"
+                        data-amount="{$hosted_payment_amount|escape:'htmlall':'UTF-8'}"
                         data-operation="create.token"
                         data-customer-name="{$firstname|escape:'htmlall':'UTF-8'} {$lastname|escape:'htmlall':'UTF-8'}"
                         data-color="{$overlay_color|escape:'htmlall':'UTF-8'}"
-                        data-currency="{$currency_iso}"
+                        data-currency="{$currency_iso|escape:'htmlall':'UTF-8'}"
                 >
                     Pay Now
                 </button>
@@ -167,7 +167,7 @@
 
         {if $payment_mode != 'hosted_payments'}
             <div>
-                <img alt="Secure Icon" class="payment-cards" src="{$module_dir|escape}views/img/credit-cards.png"/>
+                <img alt="Secure Icon" class="payment-cards" src="{$module_dir|escape:'htmlall':'UTF-8'}views/img/credit-cards.png"/>
             </div>
         {/if}
     </div>

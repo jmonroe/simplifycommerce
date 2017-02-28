@@ -1,7 +1,11 @@
-// Spectrum Colorpicker v1.6.0
-// https://github.com/bgrins/spectrum
-// Author: Brian Grinstead
-// License: MIT
+/**
+ * Copyright (c) Brian Grinstead
+ * Spectrum Colorpicker v1.6.0
+ * https://github.com/bgrins/spectrum
+ * Author: Brian Grinstead
+ * License: MIT
+ */
+
 
 (function (factory) {
     "use strict";

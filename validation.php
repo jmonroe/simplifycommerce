@@ -1,6 +1,7 @@
 <?php
 /**
  * Copyright (c) 2017, MasterCard International Incorporated
+ *
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without modification, are
@@ -24,6 +25,11 @@
  * IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
  * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
+ *
+ * @author    Simplify Commerce <support@simplify.com>
+ * @copyright 2013-2017 MasterCard International Incorporated
+ * @license   https://opensource.org/licenses/BSD-3-Clause  3-clause BSD License (BSD-3-Clause)
+ * International Registered Trademark & Property of MasterCard International Incorporated
  */
 
 include(dirname(__FILE__).'/../../config/config.inc.php');

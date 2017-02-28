@@ -24,10 +24,10 @@
 * IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 * SUCH DAMAGE.
 *}
-<link href="{$module_dir|escape}views/css/style.css" rel="stylesheet" type="text/css" media="all"/>
-<link href="{$module_dir|escape}views/css/spectrum.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{$module_dir|escape:'htmlall':'UTF-8'}views/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="{$module_dir|escape:'htmlall':'UTF-8'}views/css/spectrum.css" rel="stylesheet" type="text/css" media="all"/>
 <link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"/>
-<script type="text/javascript" src="{$module_dir|escape}views/js/spectrum.js"></script>
+<script type="text/javascript" src="{$module_dir|escape:'htmlall':'UTF-8'}views/js/spectrum.js"></script>
 
 <div class="simplify-module-wrapper">
     <div class="simplify-module-header">
@@ -56,7 +56,7 @@
             </div>
             <div class="marketing left">
                 <div class="w-container features item">
-                    <img class="features item icon" src="{$module_dir|escape}views/img/feature_price.jpg"
+                    <img class="features item icon" src="{$module_dir|escape:'htmlall':'UTF-8'}views/img/feature_price.jpg"
                          alt="feature_signup.jpg">
 
                     <h1 class="features item h1">{l s='Simple pricing' mod='simplifycommerce'}</h1>
@@ -114,9 +114,9 @@
                             <tr>
                                 <td>
                                     {if $requirement['result']}
-                                        <img src="{$ok_icon_link}" alt="ok"/>
+                                        <img src="{$ok_icon_link|escape:'htmlall':'UTF-8'}" alt="ok"/>
                                     {else}
-                                        <img src="{$nok_icon_link}" alt="not ok"/>
+                                        <img src="{$nok_icon_link|escape:'htmlall':'UTF-8'}" alt="not ok"/>
                                     {/if}
                                 </td>
                                 <td class="simplify-require-text">
@@ -133,7 +133,7 @@
             {/if}
         </section>
         <br/>
-        <form action="{$request_uri|escape:'UTF-8'}" method="post">
+        <form action="{$request_uri|escape:'javascript':'UTF-8'}" method="post">
             <section class="simplify-settings">
                 <h2>API Key Mode</h2>
 
