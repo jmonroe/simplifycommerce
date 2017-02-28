@@ -1,5 +1,5 @@
 make_zip.sh export-ignore
-/lib export-ignore
+/dist export-ignore
 .gitignore export-ignore
 .gitmodules export-ignore
 .gitattributes export-ignore
